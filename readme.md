@@ -1,6 +1,6 @@
 # rgrep
 
-I made a stupid (but fast) version of grep in rust as a learning exercise
+I made a simpel (but fast) version of grep in rust as a learning exercise
 
 ```
 ➜  temp ls -sh
