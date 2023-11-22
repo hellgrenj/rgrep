@@ -9,7 +9,7 @@ fn main() -> io::Result<()> {
     let word = &args[1];
     let path_to_file = &args[2];
     let path = Path::new(path_to_file);
-    let file = File::open(&path)?;
+    let file = File::open(path)?;
     let highlighted_word = format!("\x1b[31m{}\x1b[0m", word); // Red color using ANSI escape codes
     let mut buf = io::BufReader::new(file);
     let mut line = String::new(); // Re-use the same string when reading lines to avoid allocating a new one each time
